@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Movie List</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles3.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700,800,500' rel='stylesheet' type='text/css'>
+    </head>
+
+
+    <body>
+        
+        <div class="wrapper">
+            <div class="flex-container">
+
+                <!-- heading -->
+                <div class="heado">
+                    <div id="title" class="winds">
+                        <div id="logo" class="title"></div>
+                        <div id="heading" class="title"><p style="margin: auto 0 auto 0;">Movies</p></div>
+                        <div id="line" class="title"><hr></div>
+                    </div>
+
+                    <div id="search-bar" class="winds">
+                        <div class="form" id="form">
+                            <div id="form-line" class="formel"><hr class="form-line"></div>
+                            <div id="but" class="formel"><button type="submit" id='search-button'><i class='fa fa-search' id="fa"></i></button></div>
+                            <div id="inp" class="formel"><input type="text" placeholder="Quick Search" id='search-query'></div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <!-- content -->
+                <div class="main">
+
+                    <!-- navbar -->
+                    <div id="nav" class="winds">
+                        <div class="nav" id="lnks">
+                            <div class="lnk"><a href="#" class="">Search Results</a></div>
+                            <div class="lnk"><a href="#">All Team</a></div>
+                            <div class="lnk"><a href="#">Core</a></div>
+                            <div class="lnk"><a href="#">Developers</a></div>
+                            <div class="lnk"><a href="#">Designers</a></div>
+                            <div class="lnk"><a href="#">Mentors</a></div>
+                        </div>
+                        <div id="divider"><hr class="divider"></div>
+                    </div>
+
+
+                    <div id="movie-box" class="winds">
+                        <div id="movie-container" class="movie-container">
+                            
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <h2 class="ttl"></h2>
+                <a class="close" href="#">&times;</a>
+                <br>
+                <div class="info">
+                </div>
+            </div>
+        </div>
+
+        <template id="template-movie-card">
+            <a href="#popup1" class="pro"><div class="card" onclick="msg(this)"> 
+                <img src="" class="movie-img">
+                <div class="movie-title"></div>
+                <div class="star-rating"></div>
+
+                <p class="inf"></p>
+            </div></a>
+        </template>
+
+
+        <script src="script.js">
+            
+        </script>
+    </body>
+
+
+</html>
